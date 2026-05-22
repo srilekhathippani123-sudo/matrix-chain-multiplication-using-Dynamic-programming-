@@ -1,5 +1,3 @@
-CODE:
-
 import sys
 
 def matrix_chain_order(p):

@@ -1,10 +1,10 @@
 
-1.Title:
+📌1.Title:
 Design and Analysis of Matrix Chain
 Multiplication using Dynamic Programming.
      
 
-2.Introduction:
+🚀 2.Introduction:
 Matrix Chain Multiplication (MCM)is a classic
 problem in dynamic programming.It deals with
 finding the most efficient way to multiply a
@@ -13,7 +13,7 @@ Matrix multiplication is associative:
 (A×B)×C=A×(B×C) 
 
 
-3.Problem Statement:
+⚠️ 3.Problem Statement:
 Given a sequence of matrices,find the optimal
 way to parenthesize them so that the total number
 of multiplications is minimized.
@@ -26,14 +26,14 @@ Where:
 
 
 
-4.Mathematical Formulation:
+🧮4.Mathematical Formulation:
 m[i,j]=mini≤k<i{m[i,k]+m[k+1,j]+pi-1Pkp;}
 This formula calculates the minimum cost of
 multiplying matrices from i to j.
 
 
 
-5.Methodology (Dynamic
+🧠 5.Methodology (Dynamic
 Programming Approach):
 Steps:
 1.Create a table to store minimum
@@ -46,7 +46,7 @@ matrix cost =0)
 
 
 
-6.Example:
+💡 6.Example:
 Consider matrices with dimensions:
 p=[10,20,30,40,30]
 Matrices:
@@ -59,7 +59,7 @@ Optimal Parenthesization:
 
 
 
-7.Python Program:
+💻 7.Python Program:
 Python
 def matrix_chain_multiplication(p):
 n =len(p)
@@ -87,18 +87,18 @@ multiplications:",result)
 
 
 
-8.Output:
+✅8.Output:
 Minimum number of multiplications:30000
 
 
 
-9.Complexity Analysis:
+📈9.Complexity Analysis:
 ·Time Complexity:O(n³)
 ·Space Complexity:O(n²)
 
 
 
-10.Applications:
+🌐10.Applications:
 ·Computer graphics (transformations)
 ·Database query optimization
 ·Scientific computing
@@ -106,7 +106,7 @@ Minimum number of multiplications:30000
 
 
 
-11.Conclusion:
+🏁11.Conclusion:
 Matrix Chain Multiplication shows how dynamic
 programming avoids repeated calculations and
 finds the most efficient solution.It is a powerful method for solving optimization problems involving multiple choices.

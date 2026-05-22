@@ -2,6 +2,7 @@
 📌1.Title:
 Design and Analysis of Matrix Chain
 Multiplication using Dynamic Programming.
+
      
 
 🚀 2.Introduction:
@@ -11,6 +12,7 @@ finding the most efficient way to multiply a
 sequence of matrices.
 Matrix multiplication is associative:
 (A×B)×C=A×(B×C) 
+
 
 
 ⚠️ 3.Problem Statement:
@@ -59,46 +61,13 @@ Optimal Parenthesization:
 
 
 
-💻 7.Python Program:
-Python
-def matrix_chain_multiplication(p):
-n =len(p)
-#Create DP table
-m=[[0 for _in range(n)]for _in
-range(n)]
-#Chain length
-for L in range(2,n):
-for i in range(1,n -L+1):
-j=i +L-1
-m[i][j]=float('inf')
-p[j])
-for k in range(i,j):
-cost =(m[i][k]+
-m[k+1][j]+
-p[i-1]*p[k]*
-if cost<m[i][j]:
-m[i][j]=cost
-return m[1][n-1]
-#Example usage
-p =[10,20,30,40,30]
-result =matrix_chain_multiplication(p)
-print("Minimum number of
-multiplications:",result)
-
-
-
-✅8.Output:
-Minimum number of multiplications:30000
-
-
-
-📈9.Complexity Analysis:
+📈7.Complexity Analysis:
 ·Time Complexity:O(n³)
 ·Space Complexity:O(n²)
 
 
 
-🌐10.Applications:
+🌐8.Applications:
 ·Computer graphics (transformations)
 ·Database query optimization
 ·Scientific computing
@@ -106,7 +75,7 @@ Minimum number of multiplications:30000
 
 
 
-🏁11.Conclusion:
+🏁9.Conclusion:
 Matrix Chain Multiplication shows how dynamic
 programming avoids repeated calculations and
 finds the most efficient solution.It is a powerful method for solving optimization problems involving multiple choices.
